@@ -1,0 +1,224 @@
+
+
+
+
+OUTRAS OBSERVAÇÕES
+
+A sintaxe é simples:
+1
+# Título 1
+2
+## Título 2
+3
+### Título 3
+4
+#### Título 4
+5
+##### Título 5
+6
+###### Título 6
+Sintaxe do negrito:
+1
+Este é **negrito**
+2
+This is __strong__
+Sintaxe do itálico:
+1
+Este é *itálico*
+2
+This is _italic_
+Sintaxe do negrito e itálico:
+1
+**_strong and em_**
+Sintaxe do texto riscado:
+1
+~~riscado~~
+Você pode adicionar linhas horizontais para deixar o texto mais organizado e apresentável. Usando três hífens, três asteriscos ou três underscore:
+1
+Hífens
+2
+​
+3
+---
+4
+​
+5
+Asteriscos
+6
+​
+7
+***
+8
+​
+9
+Underscore
+10
+​
+11
+___
+Sintaxe:
+1
+Para citações em uma linha:
+2
+> Esta é uma citação
+3
+​
+4
+Em várias linhas:
+5
+> Citação 1
+6
+>
+7
+> Citação 2
+As cotações em bloco podem ser aninhadas. Adicione um '>>' na frente do parágrafo que você deseja aninhar. Por exemplo:
+1
+> Citação 1
+2
+>
+3
+>> Citação 2
+As citações de bloco podem conter outros elementos no formato Markdown. Nem todos os elementos podem ser usados, você precisará experimentar para ver quais funcionam. Exemplo:
+1
+> ##### The quarterly results look great!
+2
+>
+3
+> - Revenue was off the chart.
+4
+> - Profits were higher than ever.
+5
+>
+6
+> *Everything* is going **well**.
+Usando (número)(ponto) você pode ordenar as listas numericamente, como por exemplo:
+1
+1. Primeiro
+2
+2. Segundo
+3
+3. Terceiro
+4
+4. Quarto
+Para aninhar itens de linha em uma lista ordenada, recue os itens quatro espaços ou uma guia.
+1
+1. Primeiro item
+2
+2. Segundo item
+3
+3. Terceiro item
+4
+    1. Indentado item
+5
+    2. Indentado item
+6
+4. Quarto item
+Para criar uma lista não ordenada, adicione traços (-), asteriscos (*) ou sinais de adição (+) na frente de itens de linha.
+1
+- Exemplo 1
+2
+​
+3
+* Exemplo 2
+4
+​
+5
++ Exemplo 3
+Podemos criar também uma lista de tarefas, com a CheckBox preenchida ou não. Vejamos o exemplo:
+1
+- [ ] Esta é uma CheckBox não marcada
+2
+- [x] Esta é uma CheckBox marcada
+Temos o trecho simples, sendo de apenas uma linha, usando uma crase para abrir e outra para fechar:
+1
+` este é um exemplo `
+E também temos a mais completa, que podemos colocar quantas linhas de códigos nós quisermos. Use três crases ( ´´´ ) ou três tils ( ~~~ ) para abrir e três para fechar, desse jeito:
+1
+```
+2
+    Este é nosso
+3
+    Querido Exemplo
+4
+    
+5
+    **Teste**
+6
+    
+7
+    Nota que não irá formatar o negrito!
+8
+    ```
+Vai gerar:
+1
+Este é nosso
+2
+Querido Exemplo
+3
+**Teste**
+4
+Nota que não irá formatar o negrito!
+Para especificar qual lingugem seu código é feito, isso ajuda tanto semânticamente como também na coloração do código, basta adicionar o nome da lingugem logo após os três primeiros tils ou crases. Por exemplo:
+1
+~~~python
+2
+    s = "Sintaxe do Pythong"
+3
+    print s
+4
+    ~~~
+~~~python s = "Sintaxe do Pythong" print s ~~~
+1
+s = "Sintaxe do Python"
+2
+print s
+É possível colocar algum link em seu 'Readme', e ainda colocá-lo por debaixo de uma palavra, é o chamado link-âncora, acessando-o ao clicar na palavra. Entre colchetes [ ] a palava que deseja por debaixo dos panos. E entre parentêses ( ) o link para acesso. Vejamos o exemplo do código:
+1
+Clique [aqui](https://github.com) para acessar à página do GitHub.
+A sintaxe é parecida, apenas adicione uma exclamação (!) no início.
+1
+![Alt ou título da imagem](URL da imagem)
+Você pode fazer com que uma imagem carregue um link por debaixo dos panos, e ao clicar nela, acesse o link. É uma mescla tanto semânticamente quanto na sintaxe. Vejamos:
+1
+Clique na imagem para acessar o Google.
+2
+[![Logo_Google_2013_Official svg](https://user-images.githubusercontent.com/5532...](https://google.com.br)
+Escolha os títulos das colunas e use | para delimitar as colunas. Depois, utilize hífen - na segunda linha para indicar que acima estão os títulos das colunas, usando novamente o | para delimitar colunas. Veja um exemplo abaixo:
+1
+Teste   | Exemplo
+2
+------- | ------
+3
+Teste 1 | Exemplo 1
+4
+Teste 2 | Exemplo 2
+5
+Teste 3 | Exemplo 3
+6
+Teste 4 | Exemplo 4
+Exemplo:
+1
+Alinhado a esquerda | Centralizado | Alinhado a direita
+2
+:--------- | :------: | -------:
+3
+Exemplo | Exemplo | Exemplo
+Vejamos:
+1
+<dl>
+2
+  <dt>Lista definitiva</dt>
+3
+  <dd>É algo que as pessoas usam às vezes.</dd>
+4
+​
+5
+  <dt>Markdown no HTML</dt>
+6
+  <dd>*Não* funciona **muito bem**. Use as <em>tags</em> do HTML</dd>
+7
+</dl>
+Alguns exemplos:
+1
+:smile: :fire: :file_folder: :space_invader: :computer:
+Source: https://github.com/mende1/guia-definitivo-de-markdown
